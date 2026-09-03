@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Principal {
     public static double[] notas = new double[30];
     int quantidade;
-    
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int opcao;
@@ -37,4 +37,22 @@ public class Principal {
         System.out.println("0 - Sair");
         System.out.print("Escolha: ");
     }
+
+    public static double inserirNotas(Scanner entrada, String mensagem) {
+
+        double nota;
+
+        do {
+            System.out.print(mensagem);
+            nota = entrada.nextDouble();
+
+            if (nota < 0 || nota > 10) {
+                System.out.println("A nota deve estar entre 0 e 10!");
+            }
+
+        } while (nota < 0 || nota > 10);
+
+        return nota;
+    }
+
 }
