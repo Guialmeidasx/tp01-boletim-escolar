@@ -26,11 +26,13 @@ public class Principal {
         entrada.close();
     }
 
-    public static void exibirCabecalho() {
-        System.out.println("==============================");
-        System.out.println(" NOME DO SISTEMA ");
-        System.out.println("==============================");
-    }
+  public static void exibirCabecalho() {
+
+    System.out.println("********************************");
+    System.out.println("        BOLETIM ESCOLAR");
+    System.out.println("        RELATORIO DA TURMA");
+    System.out.println("********************************");
+}
 
     public static void exibirMenu() {
         System.out.println("1 - ...");
@@ -80,4 +82,5 @@ for (int i = 1; i < quantidade; i++) {
 System.out.println("Maior nota: " + maior);
 System.out.println("Menor nota: " + menor);
 }
+
 }
