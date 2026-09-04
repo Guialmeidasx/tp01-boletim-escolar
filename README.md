@@ -27,6 +27,7 @@ O programa possui um menu com as seguintes opções:
 0 - Sair
 
 1. Cadastrar aluno
+
 Permite cadastrar:
 Nome do aluno
 Nota 1
@@ -34,13 +35,17 @@ Nota 2
 As notas devem estar entre 0 e 10.
 A média é calculada automaticamente:
 Média = (Nota 1 + Nota 2) / 2
+
 2. Listar alunos
+
 Exibe os alunos cadastrados juntamente com:
 Nome
 Nota 1
 Nota 2
 Média
+
 3. Exibir boletim
+
 Apresenta o boletim completo da turma, mostrando:
 Nome do aluno
 Nota 1
@@ -53,12 +58,15 @@ Maior média
 Menor média
 0. Sair
 Encerra o programa.
+
 📊 Regras de situação
+
 A situação do aluno é definida de acordo com sua média:
 Média	Situação
 7,0 ou maior	Aprovado
 5,0 até 6,9	Recuperação
 Abaixo de 5,0	Reprovado
+
 🗂️ Estrutura do projeto
 tp01-boletim-escolar/
 │
@@ -70,13 +78,17 @@ tp01-boletim-escolar/
 │
 ├── .gitignore
 └── README.md
+
 🔧 Tecnologias utilizadas
+
 Java
 Git
 GitHub
-Terminal / Prompt de Comando
-Visual Studio Code ou outra IDE
+Terminal 
+Visual Studio Code
+
 📌 Estrutura do código
+
 O programa utiliza vetores paralelos com capacidade para até 30 alunos:
 String[] alunos
 double[] nota1
@@ -92,7 +104,9 @@ exibirRelatorio()
 inserirNotas()
 cadastrarAluno()
 listarAlunos()
+
 🌿 Branches
+
 O desenvolvimento foi dividido em duas branches:
 feature/cadastro-notas
 Responsável por:
@@ -108,6 +122,7 @@ Relatório do boletim
 Média geral da turma
 Maior média
 Menor média
+
 🔀 Conflito de merge
 Durante o desenvolvimento, os dois integrantes realizaram alterações diferentes no método:
 exibirCabecalho()
@@ -115,6 +130,7 @@ em suas respectivas branches.
 As branches foram posteriormente unidas à main, gerando um conflito real de merge.
 O conflito foi resolvido manualmente, mantendo as alterações necessárias para o funcionamento do sistema.
 Após a resolução, o programa foi compilado e testado novamente.
+
 ▶️ Como executar
 1. Clonar o repositório
 git clone URL_DO_REPOSITORIO
@@ -124,6 +140,7 @@ cd tp01-boletim-escolar
 javac -d bin src/Principal.java
 4. Executar
 java -cp bin Principal
+
 📝 Exemplo de utilização
 ********************************
         BOLETIM ESCOLAR
@@ -144,6 +161,7 @@ A média será:
 (8 + 7) / 2 = 7,5
 Situação:
 Aprovado
+
 👥 Desenvolvimento
 Projeto desenvolvido em dupla como atividade prática de Git/GitHub.
 O projeto utiliza branches, commits, merge, resolução de conflitos e versionamento para representar um fluxo de desenvolvimento colaborativo.
