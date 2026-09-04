@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Principal {
     public static double[] notas = new double[30];
-    int quantidade;
+    public static int quantidade;
     
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -36,5 +36,16 @@ public class Principal {
         System.out.println("1 - ...");
         System.out.println("0 - Sair");
         System.out.print("Escolha: ");
+    }
+
+    public static double calcularMedias() {
+       
+        double soma = 0;
+        for (int i = 0; i < quantidade; i++) {
+            soma = soma + notas[i];
+        }
+        double media = soma / quantidade; 
+        
+        return media;     
     }
 }
