@@ -69,6 +69,10 @@ public class Principal {
         System.out.print("Nome do aluno: ");
         alunos[quantidade] = entrada.nextLine();
 
+        notas[quantidade] = inserirNotas(
+                entrada,
+                "Digite a nota do aluno: ");
+
         quantidade++;
 
         System.out.println("Aluno cadastrado com sucesso!");
