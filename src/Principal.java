@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Principal {
     public static double[] notas = new double[30];
-    int quantidade;
+    public static int quantidade = 0;
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -13,9 +13,9 @@ public class Principal {
             opcao = entrada.nextInt();
             switch (opcao) {
                 case 1:
-                    /* funcionalidade do Desenvolvedor A */ break;
+                    break;
                 case 2:
-                    /* funcionalidade do Desenvolvedor B */ break;
+                    break;
                 case 0:
                     System.out.println("Encerrando...");
                     break;
@@ -28,12 +28,13 @@ public class Principal {
 
     public static void exibirCabecalho() {
         System.out.println("==============================");
-        System.out.println(" NOME DO SISTEMA ");
+        System.out.println("      BOLETIM ESCOLAR");
         System.out.println("==============================");
     }
 
     public static void exibirMenu() {
-        System.out.println("1 - ...");
+        System.out.println("1 - Cadastrar aluno");
+        System.out.println("2 - Listar alunos");
         System.out.println("0 - Sair");
         System.out.print("Escolha: ");
     }
