@@ -31,9 +31,10 @@ public class Principal {
     }
 
     public static void exibirCabecalho() {
-        System.out.println("==============================");
-        System.out.println("      BOLETIM ESCOLAR");
-        System.out.println("==============================");
+        System.out.println("================================");
+        System.out.println("        BOLETIM ESCOLAR");
+        System.out.println("        CADASTRO DE ALUNOS");
+        System.out.println("================================");
     }
 
     public static void exibirMenu() {
