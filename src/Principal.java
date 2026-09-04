@@ -58,4 +58,12 @@ public class Principal {
         return "Reprovado";
     }
 }
+public static void exibirRelatorio() {
+
+    double media = calcularMedias();
+
+    System.out.println("\n====== BOLETIM ESCOLAR ======");
+
+    System.out.println("Media da turma: " + media);
+}
 }
