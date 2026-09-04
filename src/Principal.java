@@ -48,4 +48,14 @@ public class Principal {
         
         return media;     
     }
+    public static String definirSituacao(double media) {
+
+    if (media >= 7) {
+        return "Aprovado";
+    } else if (media >= 5) {
+        return "Recuperacao";
+    } else {
+        return "Reprovado";
+    }
+}
 }
