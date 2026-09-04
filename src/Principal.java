@@ -63,7 +63,21 @@ public static void exibirRelatorio() {
     double media = calcularMedias();
 
     System.out.println("\n====== BOLETIM ESCOLAR ======");
-
     System.out.println("Media da turma: " + media);
+double maior = notas[0];
+double menor = notas[0];
+
+for (int i = 1; i < quantidade; i++) {
+
+    if (notas[i] > maior) {
+        maior = notas[i];
+    }
+
+    if (notas[i] < menor) {
+        menor = notas[i];
+    }
+}
+System.out.println("Maior nota: " + maior);
+System.out.println("Menor nota: " + menor);
 }
 }
