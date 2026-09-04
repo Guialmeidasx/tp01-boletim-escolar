@@ -56,7 +56,9 @@ Também apresenta:
 Média geral da turma
 Maior média
 Menor média
+
 0. Sair
+
 Encerra o programa.
 
 📊 Regras de situação
