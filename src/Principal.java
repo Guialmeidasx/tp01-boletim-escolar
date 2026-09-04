@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Principal {
     public static double[] notas = new double[30];
     public static int quantidade = 0;
+    public static String[] alunos = new String[30];
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -13,6 +14,8 @@ public class Principal {
             opcao = entrada.nextInt();
             switch (opcao) {
                 case 1:
+                    entrada.nextLine();
+                    cadastrarAluno(entrada);
                     break;
                 case 2:
                     break;
@@ -54,6 +57,21 @@ public class Principal {
         } while (nota < 0 || nota > 10);
 
         return nota;
+    }
+
+    public static void cadastrarAluno(Scanner entrada) {
+
+        if (quantidade >= 30) {
+            System.out.println("Limite de alunos atingido!");
+            return;
+        }
+
+        System.out.print("Nome do aluno: ");
+        alunos[quantidade] = entrada.nextLine();
+
+        quantidade++;
+
+        System.out.println("Aluno cadastrado com sucesso!");
     }
 
 }
