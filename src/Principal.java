@@ -18,6 +18,7 @@ public class Principal {
                     cadastrarAluno(entrada);
                     break;
                 case 2:
+                    listarAlunos();
                     break;
                 case 0:
                     System.out.println("Encerrando...");
@@ -78,4 +79,23 @@ public class Principal {
         System.out.println("Aluno cadastrado com sucesso!");
     }
 
+    public static void listarAlunos() {
+
+        if (quantidade == 0) {
+            System.out.println("Nenhum aluno cadastrado.");
+            return;
+        }
+
+        System.out.println("\n====== ALUNOS CADASTRADOS ======");
+
+        for (int i = 0; i < quantidade; i++) {
+            System.out.println(
+                    (i + 1) + " - " +
+                            alunos[i] +
+                            " | Nota: " +
+                            notas[i]);
+        }
+
+        System.out.println("==============================");
+    }
 }
